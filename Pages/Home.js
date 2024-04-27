@@ -41,10 +41,12 @@ export default function Home({ navigation }) {
           return (
             <View style={styles.sorvete}>
 
-              <TouchableOpacity onPress={() => navigation.navigate('Alterar', { id: item.id })}>
+              <TouchableOpacity onPress={() => navigation.navigate('Alterar', { id: item.id, sabor: item.sabor, preco: item.preco, data: item.data, cliente: item.cliente })}>
                 <View style={styles.itens}>
                   <Text style={styles.tituloSorvete}> Sabor: <Text style={styles.textoSorvete}>{item.sabor}</Text></Text>
                   <Text style={styles.tituloSorvete}> Preço: <Text style={styles.textoSorvete}>{item.preco}</Text></Text>
+                  <Text style={styles.tituloSorvete}> Data: <Text style={styles.textoSorvete}>{item.data}</Text></Text>
+                  <Text style={styles.tituloSorvete}> cliente: <Text style={styles.textoSorvete}>{item.cliente}</Text></Text>
                 </View>
               </TouchableOpacity>
 

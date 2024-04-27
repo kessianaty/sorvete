@@ -7,7 +7,7 @@ export default function Cadastrar({ navigation }) {
   const [sabor, setSabor] = useState('');
   const [preco, setPreco] = useState('');
   const [data, setData] = useState('');
-  const [cliente, setCliente] = useState('initialCliente');
+  const [cliente, setCliente] = useState('');
 
   async function addSorvete() {
     try {
